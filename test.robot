@@ -5,7 +5,6 @@ Library           SeleniumLibrary
 
 *** Variables ***
 ${LOGIN URL}      http://www.google.com
-${BROWSER}        Chrome
 
 *** Test Cases ***
 Valid Login
@@ -25,5 +24,5 @@ Result is "${result}"
     Result should be    ${result}
 
 Open Browser To Login Page
-    Open Browser    ${LOGIN URL}    ${BROWSER}
+    Open Browser    ${LOGIN URL}    headlessfirefox
     Title Should Be    Google
