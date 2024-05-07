@@ -18,12 +18,12 @@ Valid Login
 #
 
 Complete case flow
+    Driver  Set browser implicit wait    5
     Open Browser    https://baw21.novadoc.ecm:9443/navigator/login.jsp      firefox     options=add_argument("--ignore-certificate-errors")
     Input Text    //input[@name="j_username"]    p8admin
     Input Text    //input[@name="j_password"]    Password1
     Click Element    //input[@name="login"]
     Wait until element is visible    //span[@id="dijit_form_DropDownButton_0"]      20
-    Sleep   1
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //*[contains(text(), 'Trainee')]
     Click Element    //*[contains(text(), 'Add Case')]
@@ -33,7 +33,6 @@ Complete case flow
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_1"]    hi
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_2"]    hi
     Click Element    //*[normalize-space()='Add']
-    Sleep   1
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //*[contains(text(), 'Trainer')]
     Click Element    //*[@id='icm_widget_SelectorTabContainer_0_tablist']/div[4]/div/div[2]
