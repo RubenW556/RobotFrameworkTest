@@ -45,4 +45,5 @@ Complete case flow
     Click Element    //*[contains(text(), 'Approve')]
     Wait Until Element Is Visible    //*[contains(text(), 'Plan Training')]
     Click Element    //*[contains(text(), 'Plan Training')]
+    Sleep   1
     Click Element    //*[contains(text(), 'Complete')]
