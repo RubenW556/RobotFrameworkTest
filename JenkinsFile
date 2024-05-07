@@ -6,8 +6,6 @@ node {
     bat "python --version"
     bat "pip --version"
     bat "python -m venv ./venv"
-    bat "call ./venv/Scripts/activate.bat
-    pip install -r ./requirements.txt
-    robot --nostatusrc test.robot"
+    bat "call ./venv/Scripts/activate.bat & pip install -r ./requirements.txt & robot --nostatusrc test.robot"
     robot outputPath: '.', logFileName: 'log.html', outputFileName: 'output.xml', reportFileName: 'report.hml', passThreshold: 100, unstableThreshold: 75.0
 }
