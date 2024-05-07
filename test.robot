@@ -36,7 +36,7 @@ Complete case flow
     Sleep   1
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //*[contains(text(), 'Trainer')]
-    Click Element    //span[@name="icm_widget_SelectorTabContainer_0_tablist_b3a661f0-fb73-491b-8c50-d7e9439b6809"]
+    Click Element    //*[@id='icm_widget_SelectorTabContainer_0_tablist']/div[4]/div/div[2]
     Click Element    //*[contains(text(), 'New Approval')]
     Click Element    //*[contains(text(), 'Approve')]
     Click Element    "//*[contains(text(), 'Plan Training')]"
