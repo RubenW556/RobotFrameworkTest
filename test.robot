@@ -18,8 +18,7 @@ Valid Login
 #
 
 Complete case flow
-    Driver  Set browser implicit wait    5
-    Driver  Set selenium implicit wait    5
+    set selenium implicit wait      2 seconds
     Open Browser    https://baw21.novadoc.ecm:9443/navigator/login.jsp      firefox     options=add_argument("--ignore-certificate-errors")
     Input Text    //input[@name="j_username"]    p8admin
     Input Text    //input[@name="j_password"]    Password1
