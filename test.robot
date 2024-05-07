@@ -40,6 +40,7 @@ Complete case flow
     Click Element    //*[@id='icm_widget_SelectorTabContainer_0_tablist']/div[4]/div/div[2]
     Wait Until Element Is Visible    //*[contains(text(), 'New Approval')]
     Click Element    //*[contains(text(), 'New Approval')]
+    Sleep   1
     Click Element    //*[contains(text(), 'Approve')]
     Wait Until Element Is Visible    //*[contains(text(), 'Plan Training')]
     Click Element    //*[contains(text(), 'Plan Training')]
