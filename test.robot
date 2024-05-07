@@ -21,8 +21,8 @@ Complete case flow
     Open Browser    https://baw21.novadoc.ecm:9443/navigator/login.jsp      firefox     options=add_argument("--ignore-certificate-errors")
     Input Text    //input[@name="j_username"]    p8admin
     Input Text    //input[@name="j_password"]    Password1
-    Wait Until Element Is Visible   //input[@name="login"]
     Click Element    //input[@name="login"]
+    Wait until element is visible    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //span[@id="dijit__TreeNode_5_label"]
     Click Element    //div[@class="icmQuickSearchContent"]
