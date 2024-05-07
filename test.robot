@@ -37,7 +37,9 @@ Complete case flow
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //*[contains(text(), 'Trainer')]
     Click Element    //*[@id='icm_widget_SelectorTabContainer_0_tablist']/div[4]/div/div[2]
+    Wait Until Element Is Visible    //*[contains(text(), 'New Approval')]
     Click Element    //*[contains(text(), 'New Approval')]
     Click Element    //*[contains(text(), 'Approve')]
-    Click Element    "//*[contains(text(), 'Plan Training')]"
-    Click Element    "//*[contains(text(), 'Complete')]"
+    Wait Until Element Is Visible    //*[contains(text(), 'Plan Training')]
+    Click Element    //*[contains(text(), 'Plan Training')]
+    Click Element    //*[contains(text(), 'Complete')]
