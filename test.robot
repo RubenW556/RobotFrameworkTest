@@ -22,7 +22,7 @@ Complete case flow
     Input Text    //input[@name="j_username"]    p8admin
     Input Text    //input[@name="j_password"]    Password1
     Click Element    //input[@name="login"]
-    Wait until element is visible    //span[@id="dijit_form_DropDownButton_0"]
+    Wait until element is visible    //span[@id="dijit_form_DropDownButton_0"]      20
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //span[@id="dijit__TreeNode_5_label"]
     Click Element    //div[@class="icmQuickSearchContent"]
