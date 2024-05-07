@@ -24,18 +24,17 @@ Complete case flow
     Click Element    //input[@name="login"]
     Wait until element is visible    //span[@id="dijit_form_DropDownButton_0"]      20
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
-    Click Element    //span[@id="dijit__TreeNode_5_label"]
-    Click Element    //div[@class="icmQuickSearchContent"]
-    Click Element    //span[@id="dijit_form_DropDownButton_2_label"]
-    Click Element    //td[@id="dijit_MenuItem_22_text"]
+    Click Element    //*[contains(text(), 'Trainee')]
+    Click Element    //*[contains(text(), 'Add Case')]
+    Click Element    //*[contains(text(), 'Request Training')]
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_0"]    hi
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_1"]    hi
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_2"]    hi
-    Click Element    xpath=(//span[@class="dijitReset dijitInline dijitButtonNode"])[15]
+    Click Element    //*[contains(text(), 'Add')][0]
     Click Element    //span[@class="icmRolePicker icmEllipsis"]
-    Click Element    //span[@id="dijit__TreeNode_13_label"]
+    Click Element    //*[contains(text(), 'Trainer')]
     Click Element    //span[@name="icm_widget_SelectorTabContainer_0_tablist_b3a661f0-fb73-491b-8c50-d7e9439b6809"]
-    Click Element    xpath=(//span)[208]
-    Click Element    //span[@id="dijit_form_Button_24_label"]
-    Click Element    xpath=(//span)[212]
-    Click Element    //span[@id="dijit_form_Button_36_label"]
+    Click Element    //*[contains(text(), 'New Approval')]
+    Click Element    //*[contains(text(), 'Approve')]
+    Click Element    "//*[contains(text(), 'Plan Training')]"
+    Click Element    "//*[contains(text(), 'Complete')]"
