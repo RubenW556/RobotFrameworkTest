@@ -8,6 +8,6 @@ node {
     bat "python -m venv ./venv"
     bat "call ./venv/Scripts/activate.bat"
     bat "pip install -r ./requirements.txt"
-    bat "robot test.robot"
+    bat "robot --nostatusrc test.robot"
     robot outputPath: '.', logFileName: 'log.html', outputFileName: 'output.xml', reportFileName: 'report.hml', passThreshold: 100, unstableThreshold: 75.0
 }
