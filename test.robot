@@ -28,6 +28,7 @@ Complete case flow
     Click Element    //*[contains(text(), 'Trainee')]
     Click Element    //*[contains(text(), 'Add Case')]
     Click Element    //*[contains(text(), 'Request Training')]
+    Wait Until Element Is Visible    //input[@id="pvr_widget_editors_TextBoxEditor_0"]
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_0"]    hi
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_1"]    hi
     Input Text    //input[@id="pvr_widget_editors_TextBoxEditor_2"]    hi
