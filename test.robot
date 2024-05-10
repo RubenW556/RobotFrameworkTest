@@ -6,7 +6,15 @@ Library           SeleniumLibrary
 ${LOGIN URL}      http://google.com/
 
 *** Test Cases ***
-Valid Login
+Valid Login1
+    Complete case flow
+Valid Login2
+    Complete case flow
+Valid Login3
+    Complete case flow
+Valid Login4
+    Complete case flow
+Valid Login5
     Complete case flow
 
 *** Keywords ***
@@ -47,3 +55,5 @@ Complete case flow
     Click Element    //*[contains(text(), 'Plan Training')]
     Sleep   1
     Click Element    //*[contains(text(), 'Complete')]
+
+
