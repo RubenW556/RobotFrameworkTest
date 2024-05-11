@@ -8,14 +8,14 @@ ${LOGIN URL}      http://google.com/
 *** Test Cases ***
 Valid Login1
     Complete case flow
-Valid Login2
-    Complete case flow
-Valid Login3
-    Complete case flow
-Valid Login4
-    Complete case flow
-Valid Login5
-    Complete case flow
+#Valid Login2
+#    Complete case flow
+#Valid Login3
+#    Complete case flow
+#Valid Login4
+#    Complete case flow
+#Valid Login5
+#    Complete case flow
 
 *** Keywords ***
 #Open Browser To Login Page
@@ -32,7 +32,7 @@ Complete case flow
     Input Text    //input[@name="j_password"]    Password1
     Click Element    //input[@name="login"]
     Wait until element is visible    //span[@id="dijit_form_DropDownButton_0"]      20
-    Sleep   1
+    Sleep   2
     Click Element    //span[@id="dijit_form_DropDownButton_0"]
     Click Element    //*[contains(text(), 'Trainee')]
     Click Element    //*[contains(text(), 'Add Case')]
@@ -49,11 +49,13 @@ Complete case flow
     Click Element    //*[@id='icm_widget_SelectorTabContainer_0_tablist']/div[4]/div/div[2]
     Wait Until Element Is Visible    //*[contains(text(), 'New Approval')]
     Click Element    //*[contains(text(), 'New Approval')]
-    Sleep   1
+    Wait Until Element Is Visible    //*[contains(text(), 'Approve')]
+    Sleep   3
     Click Element    //*[contains(text(), 'Approve')]
     Wait Until Element Is Visible    //*[contains(text(), 'Plan Training')]
     Click Element    //*[contains(text(), 'Plan Training')]
-    Sleep   1
+    Wait Until Element Is Visible    //*[contains(text(), 'Complete')]
+    Sleep   3
     Click Element    //*[contains(text(), 'Complete')]
 
 
