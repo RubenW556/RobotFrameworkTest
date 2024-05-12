@@ -8,14 +8,14 @@ ${LOGIN URL}      http://google.com/
 *** Test Cases ***
 Valid Login1
     Complete case flow
-#Valid Login2
-#    Complete case flow
-#Valid Login3
-#    Complete case flow
-#Valid Login4
-#    Complete case flow
-#Valid Login5
-#    Complete case flow
+Valid Login2
+    Complete case flow
+Valid Login3
+    Complete case flow
+Valid Login4
+    Complete case flow
+Valid Login5
+    Complete case flow
 
 *** Keywords ***
 #Open Browser To Login Page
